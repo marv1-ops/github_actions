@@ -5,7 +5,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-20.04]
+        os: [ubuntu-latest, ubuntu-22.04]
     steps:
       - name: echo a string
         run: echo "Hello world"
@@ -14,3 +14,4 @@ jobs:
           python3 -V
           touch my_file_with_workflow.py
           ls -l
+
